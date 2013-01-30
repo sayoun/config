@@ -1,0 +1,22 @@
+[user]
+    name = XXX
+    email = XXX@YYY.ZZZ
+
+[credential]
+    helper = cache --timeout=3600
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    grep = auto
+
+[alias]
+    st = status
+    df = diff --color=auto
+    sup = svn rebase
+    mit = svn dcommit
+    sf = svn fetch
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    review = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p
